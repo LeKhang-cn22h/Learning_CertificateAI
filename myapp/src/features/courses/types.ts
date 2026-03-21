@@ -62,3 +62,18 @@ export interface TrialData {
   plans: Plan[]
   faq:   FaqItem[]
 }
+
+export interface CourseFormData {
+  title:       string
+  description: string
+  category:    string
+  author:      string
+  time:        number
+  img:         string
+  previewUrl:  string
+}
+
+export interface AdminCoursesData {
+  total:   number
+  courses: Course[]
+}
