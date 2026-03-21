@@ -83,8 +83,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
     tokenStorage.set(data.accessToken, data.refreshToken)
     document.cookie = `certai_access_token=${data.accessToken}; path=/; SameSite=Lax`
+    document.cookie = `certai_role=${data.user.role}; path=/; SameSite=Lax`
     dispatch({ type: "SUCCESS", user: data.user })
-    router.push("/home")
+    router.push(data.user.role==="admin"?"/admin":"/home")
   }, [router])
 
   const register = useCallback(async (payload: RegisterPayload) => {
@@ -96,14 +97,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
     tokenStorage.set(data.accessToken, data.refreshToken)
     document.cookie = `certai_access_token=${data.accessToken}; path=/; SameSite=Lax`
+    document.cookie = `certai_role=${data.user.role}; path=/; SameSite=Lax`
     dispatch({ type: "SUCCESS", user: data.user })
-    router.push("/home")
+    router.push(data.user.role==="admin"?"/admin":"/home")
   }, [router])
 
   const logout = useCallback(async () => {
     await authService.logout()
     tokenStorage.clear()
     document.cookie = "certai_access_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+    document.cookie = "certai_role=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
     dispatch({ type: "LOGOUT" })
     router.push("/login")
   }, [router])
@@ -118,5 +121,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 export function useAuth() {
   const ctx = useContext(AuthContext)
   if (!ctx) throw new Error("useAuth must be used inside <AuthProvider>")
-  return ctx
+  return {
+    ...ctx,
+    isAdmin: ctx.user?.role ==="admin",
+    isUser: ctx.user?.role ==="user",
+  }
 }
