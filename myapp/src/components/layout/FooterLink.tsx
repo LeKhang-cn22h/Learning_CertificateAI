@@ -5,7 +5,7 @@ type Props={
 };
 export default function FooterLink({href,children}:Props){
     return(
-        <Link href={href} className="px-2 before:content-['-'] before:mr-2 hover:text-gray-300 transition">
+        <Link href={href} className="px-2 before:content-[' '] before:mx-2 first:before:content-none hover:text-gray-300 transition">
             {children}
         </Link>
     );

@@ -1,4 +1,5 @@
-import HomeScreen from "@/src/screens/home";
+
+import HomePage from "./home/page";
 export default function Page() {
-  return <HomeScreen />;
+  return <HomePage />;
 }
