@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"
 import SideBar from "./SideBar";
 import AppHeader from "./AppHeader";
 import AppFooter from "./AppFooter";
-const AUTH_PATHS = ["/login", "/register"]
+const AUTH_PATHS = ["/login", "/register", "/admin"]
  export default function LayoutClient({children}: {children:React.ReactNode}){
     const [open, setOpen] =useState(false)
     const pathname=usePathname()

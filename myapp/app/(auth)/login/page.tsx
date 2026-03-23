@@ -8,8 +8,17 @@ export default function LoginPage(){
     const [email, setEmail]=useState("")
     const [password, setPassword]= useState("")
     const [showPass,setShowPass]= useState(false)
+    const [remember,   setRemember]   = useState(false)
     async function handleSubmit(e:React.SyntheticEvent){
         e.preventDefault()
+        // Lưu hoặc xóa email tùy remember
+        if (remember) {
+          localStorage.setItem("certai_saved_email", email)
+          localStorage.setItem("certai_remember",    "true")
+        } else {
+          localStorage.removeItem("certai_saved_email")
+          localStorage.removeItem("certai_remember")
+        }
         await login({email,password})
     }
     return (
@@ -58,6 +67,18 @@ export default function LoginPage(){
                   required
                   className="w-full border text-gray-900 border-gray-300 rounded-lg px-4 py-2.5 pr-10 text-sm focus:outline-none focus:border-blue-500 transition-colors"
                 />
+                {/* Remember me */}
+                <div className="flex items-center justify-between">
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={remember}
+                      onChange={e => setRemember(e.target.checked)}
+                      className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                    />
+                    <span className="text-sm text-gray-600">Remember me</span>
+                  </label>
+                </div>
                 <button
                   type="button"
                   onClick={() => setShowPass(v => !v)}
