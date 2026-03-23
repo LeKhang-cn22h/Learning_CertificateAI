@@ -1,7 +1,7 @@
 // app/home/page.tsx
-import CourseList from "@/src/components/ui/CourseList"
-import Hero       from "@/src/features/home/components/Hero"
-import SkillList  from "@/src/features/home/components/SkillList"
+import Hero       from "@/features/home/components/Hero"
+import SkillList  from "@/features/home/components/SkillList"
+import CourseList from "@/shared/ui/CourseList"
 
 export default function HomePage() {
   return (

@@ -2,9 +2,9 @@ import { TopicShowcase } from "../data/types";
 import TopicHero from "./TopicHero";
 import FeaturedCourses from "./FeaturedCourses";
 import LearningPaths from "./LearningPaths";
-import AllCoursesGrid from "../badge/AllCoursesGrid";
 import TopInstructors from "./TopInstructors";
 import TopicSkillsAndWhy from "./TopicSkillsAndWhy";
+import AllCoursesGrid from "./AllCoursesGrid";
 
 export default function TopicShowcasePage({ topic }: { topic: TopicShowcase }) {
   return (

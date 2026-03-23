@@ -1,7 +1,7 @@
 // src/features/admin/courses/services/adminCourseService.ts
-import { apiClient }                          from "@/src/lib/apiClient"
 import type { AdminCoursesData, AdminCourse,
-              CourseFormData }                from "@/src/features/admin/courses/types"
+              CourseFormData }                from "@/features/admin/courses/types"
+import { apiClient } from "@/shared/api/apiClient";
 
 export const adminCourseService = {
   getCourses: () =>

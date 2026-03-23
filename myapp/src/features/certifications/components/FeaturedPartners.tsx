@@ -1,5 +1,5 @@
-// src/features/certifications/components/FeaturedPartners.tsx
-import type { CertProviderItem } from "@/src/features/certifications/types"
+// features/certifications/components/FeaturedPartners.tsx
+import type { CertProviderItem } from "@/features/certifications/types"
 
 type Props = {
   providers: CertProviderItem[]

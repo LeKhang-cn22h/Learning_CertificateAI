@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { useAuth } from "@/src/features/auth/hooks/useAuth"
+import { useAuth } from "@/features/auth/hooks/useAuth"
 import type {ReactNode} from "react"
 
 type Props={

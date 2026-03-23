@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import type { QuizQuestion } from "@/src/features/courses/types"
+import type { QuizQuestion } from "@/features/courses/types"
 
 type Props = {
   quiz:        QuizQuestion[]

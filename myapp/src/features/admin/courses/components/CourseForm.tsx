@@ -1,6 +1,6 @@
-// src/features/admin/courses/components/CourseForm.tsx
-import type { CourseFormData } from "@/src/features/admin/courses/types"
-import { COURSE_CATEGORIES }   from "@/src/features/admin/courses/types"
+// features/admin/courses/components/CourseForm.tsx
+import type { CourseFormData } from "@/features/admin/courses/types"
+import { COURSE_CATEGORIES }   from "@/features/admin/courses/types"
 
 type Props = {
   form:      CourseFormData

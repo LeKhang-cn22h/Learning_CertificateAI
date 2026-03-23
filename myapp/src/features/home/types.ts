@@ -1,8 +1,6 @@
 ﻿// src/features/home/types.ts
-import type { ID } from '@/src/types/common'
-
 export interface Skill {
-  id:          ID
+  id:          string
   name:        string
   icon:        string
   courseCount: number

@@ -1,4 +1,4 @@
-import type { FaqItem } from "@/src/features/courses/types"
+import type { FaqItem } from "@/features/courses/types"
 
 export default function FaqSection({ items }: { items: FaqItem[] }) {
   return (

@@ -1,8 +1,8 @@
 ﻿"use client"
 import { useEffect, useReducer, useState } from "react"
-import { practiceService }                 from "@/src/services/practiceService"
-import type { PracticeData }               from "@/src/features/practice/types"
-import type { SearchParams }               from "@/src/types/utils"
+import type { PracticeData }               from "@/features/practice/types"
+import { SearchParams } from "@/shared/types";
+import { practiceService } from "../services/practiceService";
 
 type State = { data: PracticeData | null; loading: boolean; error: string | null }
 type Action =
@@ -20,7 +20,7 @@ export function usePractice(initialParams?: SearchParams) {
 
   useEffect(() => {
     let cancelled = false
-    practiceService.getPracticeData(params).then(({ data, error }) => {
+    practiceService.getPracticeData().then(({ data, error }) => {
       if (cancelled) return
       if (error || !data) dispatch({ type: "ERROR", error: error ?? "Unknown error" })
       else                dispatch({ type: "SUCCESS", data })

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Certification } from "@/src/features/certifications/types"
+import type { Certification } from "@/features/certifications/types"
 
 const typeStyles: Record<string, { bg: string; text: string; border: string }> = {
   "Professional Certificate": { bg: "bg-amber-50", text: "text-amber-700", border: "border-amber-200" },

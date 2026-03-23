@@ -1,8 +1,8 @@
-﻿import type { ID }         from '@/src/types/common'
-import type { Difficulty } from '@/src/types/enums'
+﻿// src/features/practice/types.ts
+import type { Difficulty } from "@/shared/types/enums"
 
 export interface Challenge {
-  id:          ID
+  id:          string
   title:       string
   description: string
   difficulty:  Difficulty

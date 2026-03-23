@@ -1,7 +1,7 @@
 -"use client"
 import { useEffect, useReducer }  from "react"
-import { dashboardService }       from "@/src/features/admin/dashboard/services/dashboardService"
-import type { DashboardData }     from "@/src/features/admin/dashboard/types"
+import { dashboardService }       from "@/features/admin/dashboard/services/dashboardService"
+import type { DashboardData }     from "@/features/admin/dashboard/types"
 
 type State  = { data: DashboardData | null; loading: boolean; error: string | null }
 type Action =

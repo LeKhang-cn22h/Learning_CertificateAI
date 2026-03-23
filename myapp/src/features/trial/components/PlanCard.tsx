@@ -1,5 +1,5 @@
 import Link      from "next/link"
-import type { Plan } from "@/src/features/courses/types"
+import type { Plan } from "@/features/courses/types"
 
 export default function PlanCard({ plan }: { plan: Plan }) {
   return (

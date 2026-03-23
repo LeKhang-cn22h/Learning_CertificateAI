@@ -1,11 +1,11 @@
 "use client"
 import { use }                    from "react"
 import { useRouter }              from "next/navigation"
-import RequireRole                from "@/src/features/auth/components/RequireRole"
-import AdminFormWrapper           from "@/src/features/admin/shared/components/AdminFormWrapper"
-import AdminLoadingTable          from "@/src/features/admin/shared/components/AdminLoadingTable"
-import CourseForm                 from "@/src/features/admin/courses/components/CourseForm"
-import { useAdminCourseForm }     from "@/src/features/admin/courses/hooks/useAdminCourseForm"
+import RequireRole                from "@/features/auth/components/RequireRole"
+import AdminFormWrapper           from "@/features/admin/shared/components/AdminFormWrapper"
+import AdminLoadingTable          from "@/features/admin/shared/components/AdminLoadingTable"
+import CourseForm                 from "@/features/admin/courses/components/CourseForm"
+import { useAdminCourseForm }     from "@/features/admin/courses/hooks/useAdminCourseForm"
 
 type Props = { params: Promise<{ id: string }> }
 

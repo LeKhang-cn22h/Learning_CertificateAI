@@ -1,5 +1,5 @@
-import { apiClient } from "@/src/lib/apiClient";
-import type { AuthResponse,LoginPayload,RegisterPayload, AuthUser } from "@/src/features/auth/types";
+import type { AuthResponse,LoginPayload,RegisterPayload, AuthUser } from "@/features/auth/types";
+import { apiClient } from "@/shared/api/apiClient";
  export const authService={
     login:(payload:LoginPayload)=>
         apiClient.post<AuthResponse>("/auth/login",payload),

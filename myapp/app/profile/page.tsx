@@ -1,8 +1,8 @@
-import ProfileHeader from "@/src/features/profile/components/ProfileHeader";
-import ProfileAbout from "@/src/features/profile/components/ProfileAbout";
-import ProfileInProgress from "@/src/features/profile/components/ProfileInProgress";
-import ProfileCertificates from "@/src/features/profile/components/ProfileCertificates";
-import ProfileActivity from "@/src/features/profile/components/ProfileActivity";
+import ProfileHeader from "@/features/profile/components/ProfileHeader";
+import ProfileAbout from "@/features/profile/components/ProfileAbout";
+import ProfileInProgress from "@/features/profile/components/ProfileInProgress";
+import ProfileCertificates from "@/features/profile/components/ProfileCertificates";
+import ProfileActivity from "@/features/profile/components/ProfileActivity";
 
 export const metadata = {
   title: "My Profile | GotikHub",

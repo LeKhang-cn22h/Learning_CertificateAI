@@ -1,7 +1,7 @@
 // page route:/career
-import InfoCard from "@/src/components/ui/InfoCard";
-import InfoSection from "@/src/components/ui/InfoSection";
-import CareerSearch from "@/src/features/career/components/careerSearch";
+import CareerSearch from "@/features/career/components/careerSearch";
+import InfoCard from "@/shared/ui/InfoCard";
+import InfoSection from "@/shared/ui/InfoSection";
 
 export default function CareerPage(){
     return(

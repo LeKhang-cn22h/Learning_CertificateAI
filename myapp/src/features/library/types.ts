@@ -1,9 +1,8 @@
-﻿// src/features/library/types.ts
-import type { ID }     from '@/src/types/common'
-import type { Course } from '@/src/features/content/types'
+﻿// features/library/types.ts
+import type { Course } from '@/features/content/types'
 
 export interface LibraryItem {
-  id:              ID
+  id:              string
   course:          Course
   savedAt:         string
   progress?:       number
@@ -11,7 +10,7 @@ export interface LibraryItem {
 }
 
 export interface LibraryCollection {
-  id:    ID
+  id:    string
   name:  string
   items: LibraryItem[]
 }

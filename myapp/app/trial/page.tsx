@@ -1,8 +1,8 @@
 // app/trial/page.tsx
 "use client"
-import { useTrial } from "@/src/features/courses/hook/useTrial"
-import FaqSection from "@/src/features/trial/components/FaqSection"
-import PlanCard from "@/src/features/trial/components/PlanCard"
+import { useTrial } from "@/features/courses/hooks/useTrial"
+import FaqSection from "@/features/trial/components/FaqSection"
+import PlanCard from "@/features/trial/components/PlanCard"
 import Link          from "next/link"
 
 export default function TrialPage() {

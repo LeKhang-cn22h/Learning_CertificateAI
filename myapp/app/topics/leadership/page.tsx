@@ -1,5 +1,5 @@
-import TopicShowcasePage from "@/src/features/topics/components/TopicShowcasePage";
-import { leadershipData } from "@/src/features/topics/data/leadershipData";
+import TopicShowcasePage from "@/features/topics/components/TopicShowcasePage";
+import { leadershipData } from "@/features/topics/data/leadershipData";
 
 export const metadata = {
   title: "Leadership & Management | GotikHub",

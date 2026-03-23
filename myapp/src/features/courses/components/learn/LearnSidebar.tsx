@@ -1,4 +1,4 @@
-import { Lesson } from "@/src/features/courses/types"
+import { Lesson } from "@/features/courses/types"
 
 type Props = {
   lessons:        Lesson[]

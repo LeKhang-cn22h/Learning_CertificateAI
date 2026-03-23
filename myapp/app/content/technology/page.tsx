@@ -1,8 +1,9 @@
+import ContentCourseGrid from "@/features/content/components/ContentCourseGrid";
+import ContentHero from "@/features/content/components/ContentHero";
+import ContentSubNav from "@/features/content/components/ContentSubNav";
+import { getCoursesByCategory, subCategories } from "@/features/content/data/contentData";
 import { Suspense } from "react";
-import ContentHero from "@/src/features/content/components/ContentHero";
-import ContentSubNav from "@/src/features/content/components/ContentSubNav";
-import ContentCourseGrid from "@/src/features/content/components/ContentCourseGrid";
-import { getCoursesByCategory, subCategories } from "@/src/features/content/data/contentData";
+
 
 type Props = {
   searchParams: { sub?: string };

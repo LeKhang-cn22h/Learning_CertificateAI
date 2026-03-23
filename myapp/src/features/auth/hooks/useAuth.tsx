@@ -8,14 +8,14 @@ import {
     type ReactNode,
 } from "react"
 import { useRouter } from "next/navigation"
-import { authService } from "@/src/features/auth/services/authService"
-import {tokenStorage} from "@/src/lib/token"
+import { authService } from "@/features/auth/services/authService"
 
 import type{
     AuthUser,
     LoginPayload,
     RegisterPayload
-} from "@/src/features/auth/types"
+} from "@/features/auth/types"
+import { tokenStorage } from "@/shared/api/token"
 
 type AuthState={
     user:AuthUser | null

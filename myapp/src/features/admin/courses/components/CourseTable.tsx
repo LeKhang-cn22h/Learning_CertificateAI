@@ -1,7 +1,7 @@
 // src/features/admin/courses/components/CourseTable.tsx
 import Image from "next/image"
 import Link  from "next/link"
-import type { AdminCourse } from "@/src/features/admin/courses/types"
+import type { AdminCourse } from "@/features/admin/courses/types"
 
 type Props = {
   courses:  AdminCourse[]

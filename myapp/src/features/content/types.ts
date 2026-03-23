@@ -1,11 +1,10 @@
 ﻿// src/features/content/types.ts
-import type { ID }                                   from '@/src/types/common'
-import type { Level, ContentType, ContentCategory }  from '@/src/types/enums'
+import type { Level, ContentType, ContentCategory }  from '@/shared/types/enums'
 
 export type { ContentType, ContentCategory }
 
 export interface Course {
-  id:          ID
+  id:          string
   title:       string
   provider:    string
   thumbnail:   string
@@ -18,7 +17,7 @@ export interface Course {
 }
 
 export interface ContentItem {
-  id:          ID
+  id:          string
   title:       string
   type:        ContentType
   category:    ContentCategory

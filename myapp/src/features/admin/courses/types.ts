@@ -1,11 +1,6 @@
-export interface AdminCourse {
-  id:          string
-  title:       string
-  description: string
-  category:    string
-  author:      string
-  time:        number
-  img:         string
+import type { Course } from "@/entities/course"
+
+export interface AdminCourse extends Course {
   previewUrl?: string
 }
 

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link  from "next/link"
-import { courseService } from "@/src/features/courses/services/courseService"
+import { courseService } from "@/features/courses/services/courseService"
 
 type Props = {
   params: Promise<{ id: string }>

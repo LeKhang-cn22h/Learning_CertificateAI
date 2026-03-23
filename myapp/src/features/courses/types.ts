@@ -1,43 +1,21 @@
+// src/features/courses/types.ts
+import type { Course } from "@/entities/course"
 
-export interface QuizQuestion {
-  id:       string
-  question: string
-  options:  string[]
-  answer:   number   
-}
+export type {
+  Course,
+  CourseDetail,
+  CoursesData,
+  ExploreData,
+  Lesson,
+  QuizQuestion,
+  CourseFormData,
+} from "@/entities/course"
 
-export interface Lesson {
-  id:       string
-  title:    string
-  duration: string
-  videoUrl: string
-  quiz:     QuizQuestion[]
-}
+export { COURSE_CATEGORIES, EMPTY_COURSE_FORM } from "@/entities/course"
 
-export interface Course {
-  id:          string
-  img:         string
-  category:    string
-  time:        number
-  title:       string
-  description: string
-  author:      string
-   previewUrl?:  string
-}
-
-export interface CourseDetail extends Course {
-  lessons: Lesson[]
-  skills:  string[]
-}
-
-export interface CoursesData {
+export interface AdminCoursesData {
+  total:   number
   courses: Course[]
-}
-
-export interface ExploreData {
-  total:      number
-  categories: string[]
-  courses:    Course[]
 }
 
 export interface Plan {
@@ -61,19 +39,4 @@ export interface FaqItem {
 export interface TrialData {
   plans: Plan[]
   faq:   FaqItem[]
-}
-
-export interface CourseFormData {
-  title:       string
-  description: string
-  category:    string
-  author:      string
-  time:        number
-  img:         string
-  previewUrl:  string
-}
-
-export interface AdminCoursesData {
-  total:   number
-  courses: Course[]
 }

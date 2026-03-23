@@ -3,11 +3,11 @@
 import { use }                   from "react"
 import Link                      from "next/link"
 import { useRouter }             from "next/navigation"
-import LearnVideo                from "@/src/features/courses/components/learn/LearnVideo"
-import LearnQuiz                 from "@/src/features/courses/components/learn/LearnQuiz"
-import LearnSidebar              from "@/src/features/courses/components/learn/LearnSidebar"
-import LessonCompletePopup       from "@/src/features/courses/components/learn/LessonCompletePopup"
-import { useLearn } from "@/src/features/courses/hook/useLearn"
+import LearnVideo                from "@/features/courses/components/learn/LearnVideo"
+import LearnQuiz                 from "@/features/courses/components/learn/LearnQuiz"
+import LearnSidebar              from "@/features/courses/components/learn/LearnSidebar"
+import LessonCompletePopup       from "@/features/courses/components/learn/LessonCompletePopup"
+import { useLearn } from "@/features/courses/hooks/useLearn"
 
 type Props = {
   params: Promise<{ id: string }>

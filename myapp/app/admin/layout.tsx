@@ -1,6 +1,7 @@
-import AdminFooter from "@/src/features/admin/shared/layout/AdminFooter";
-import AdminHeader from "@/src/features/admin/shared/layout/AdminHeader";
-import AdminSidebar from "@/src/features/admin/shared/layout/AdminSidebar";
+import AdminFooter from "@/widgets/layout/AdminFooter";
+import AdminHeader from "@/widgets/layout/AdminHeader";
+import AdminSidebar from "@/widgets/layout/AdminSidebar";
+
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (

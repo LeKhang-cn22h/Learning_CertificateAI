@@ -1,5 +1,5 @@
-import { apiClient }                  from "@/src/lib/apiClient"
-import type { CoursesData, CourseDetail, ExploreData, TrialData } from "@/src/features/courses/types"
+import type { CoursesData, CourseDetail, ExploreData, TrialData } from "@/features/courses/types"
+import { apiClient } from "@/shared/api/apiClient"
 
 export const courseService = {
   getCourses: () =>

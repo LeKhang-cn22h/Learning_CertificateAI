@@ -1,8 +1,8 @@
 "use client"
-import {FaArrowCircleRight} from "@/src/components/icons";
 import {useState} from 'react'
 import Link from "next/link";
-import {IoSparklesSharp } from "@/src/components/icons"
+import { FaArrowCircleRight } from 'react-icons/fa';
+import { IoSparklesSharp } from 'react-icons/io5';
 export default function CareerSearch(){
     const [value,setValue]=useState("");
     return(

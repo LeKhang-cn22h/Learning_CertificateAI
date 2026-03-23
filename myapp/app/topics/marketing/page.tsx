@@ -1,5 +1,5 @@
-import TopicShowcasePage from "@/src/features/topics/components/TopicShowcasePage";
-import { marketingData } from "@/src/features/topics/data/marketingData";
+import TopicShowcasePage from "@/features/topics/components/TopicShowcasePage";
+import { marketingData } from "@/features/topics/data/marketingData";
 
 export const metadata = {
   title: "Marketing | GotikHub",

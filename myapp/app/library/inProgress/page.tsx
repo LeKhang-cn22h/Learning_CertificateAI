@@ -1,4 +1,4 @@
-import EmptyState from "@/src/features/library/components/EmptyState";
+import EmptyState from "@/features/library/components/EmptyState";
 
 export default function InProgress(){
     return(

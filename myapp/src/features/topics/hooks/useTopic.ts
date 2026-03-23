@@ -1,7 +1,7 @@
 ﻿'use client'
 import { useEffect, useState }            from 'react'
-import { topicService }                   from '@/src/services/topicService'
-import type { TopicData, TopicSlug }      from '@/src/features/topics/types'
+import type { TopicData, TopicSlug }      from '@/features/topics/types'
+import { topicService } from '../services/topicService'
 
 export function useTopic(slug: TopicSlug) {
   const [data, setData]       = useState<TopicData | null>(null)

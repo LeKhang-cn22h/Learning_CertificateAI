@@ -1,9 +1,9 @@
-﻿import type { ID }           from '@/src/types/common'
-import type { ActivityType } from '@/src/types/enums'
-import type { Course }       from '@/src/features/content/types'
+﻿// src/features/profile/types.ts
+import type { ActivityType } from "@/shared/types/enums"
+import type { Course }       from "@/entities/course"
 
 export interface UserProfile {
-  id:                   ID
+  id:                   string
   name:                 string
   email:                string
   avatar:               string
@@ -16,7 +16,7 @@ export interface UserProfile {
 }
 
 export interface ProfileActivity {
-  id:     ID
+  id:     string
   type:   ActivityType
   title:  string
   date:   string
@@ -24,7 +24,7 @@ export interface ProfileActivity {
 }
 
 export interface ProfileCertificate {
-  id:         ID
+  id:         string
   title:      string
   provider:   string
   issuedDate: string

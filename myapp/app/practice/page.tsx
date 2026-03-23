@@ -1,6 +1,6 @@
-import PracticeHero from "@/src/features/practice/components/PracticeHero";
-import PracticeFeatures from "@/src/features/practice/components/PracticeFeatures";
-import PracticeGrid from "@/src/features/practice/components/PracticeGrid";
+import PracticeHero from "@/features/practice/components/PracticeHero";
+import PracticeFeatures from "@/features/practice/components/PracticeFeatures";
+import PracticeGrid from "@/features/practice/components/PracticeGrid";
 
 export const metadata = {
   title: "Coding Practice | GotikHub",

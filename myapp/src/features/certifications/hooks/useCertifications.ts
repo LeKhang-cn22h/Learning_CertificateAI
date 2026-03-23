@@ -1,8 +1,8 @@
 ﻿// src/features/certifications/hooks/useCertifications.ts
 "use client"
 import { useEffect, useReducer } from "react"
-import { certService }           from "@/src/services/certService"
-import type { CertificationsData } from "@/src/features/certifications/types"
+import type { CertificationsData } from "@/features/certifications/types"
+import { certService } from "../services/certService";
 
 type State  = { data: CertificationsData | null; loading: boolean; error: string | null }
 type Action =

@@ -1,6 +1,6 @@
 // src/features/certifications/components/ProviderFilter.tsx
 "use client"
-import type { CertProviderItem } from "@/src/features/certifications/types"
+import type { CertProviderItem } from "@/features/certifications/types"
 
 type Props = {
   active:    string

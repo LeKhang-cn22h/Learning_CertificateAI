@@ -1,6 +1,6 @@
 // src/features/certifications/components/CertHero.tsx
 "use client"
-import type { CredentialTypeItem } from "@/src/features/certifications/types"
+import type { CredentialTypeItem } from "@/features/certifications/types"
 
 type Props = {
   activeType:      string

@@ -1,9 +1,8 @@
 ﻿// src/features/career/types.ts
-import type { ID }     from '@/src/types/common'
-import type { Course } from '@/src/features/content/types'
+import type { Course } from "@/entities/course"
 
 export interface CareerPath {
-  id:             ID
+  id:             string
   title:          string
   description:    string
   requiredSkills: string[]

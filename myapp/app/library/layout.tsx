@@ -1,6 +1,6 @@
-import LibrarySideBar from "@/src/features/library/components/LibrarySideBar";
-import InfoCard from "@/src/components/ui/InfoCard";
-import InfoSection from "@/src/components/ui/InfoSection";
+import LibrarySideBar from "@/features/library/components/LibrarySideBar";
+import InfoCard from "@/shared/ui/InfoCard";
+import InfoSection from "@/shared/ui/InfoSection";
 
 export default function LibraryLayout({
   children,

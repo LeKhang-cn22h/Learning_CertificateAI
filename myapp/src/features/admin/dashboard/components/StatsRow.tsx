@@ -1,4 +1,4 @@
-import type { StatCard } from "@/src/features/admin/dashboard/types"
+import type { StatCard } from "@/features/admin/dashboard/types"
 
 export default function StatsRow({ stats }: { stats: StatCard[] }) {
   return (

@@ -1,8 +1,8 @@
 ﻿"use client"
 import { useEffect, useReducer, useState } from "react"
-import { contentService }                  from "@/src/services/contentService"
-import type { ContentData, ContentCategory } from "@/src/features/content/types"
-import type { SearchParams }               from "@/src/types/utils"
+import type { ContentData, ContentCategory } from "@/features/content/types"
+import { SearchParams } from "@/shared/types"
+import { contentService } from "../services/contentService"
 
 type State = {
   data:    ContentData | null
@@ -31,8 +31,8 @@ export function useContent(category?: ContentCategory, initialParams?: SearchPar
     let cancelled = false
 
     const call = category
-      ? contentService.getContentByCategory(category, params)
-      : contentService.getAllContent(params)
+      ? contentService.getContentByCategory(category)
+      : contentService.getAllContent()
 
     call.then(({ data, error }) => {
       if (cancelled) return

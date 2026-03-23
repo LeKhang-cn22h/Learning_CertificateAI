@@ -1,8 +1,8 @@
 // app/layout.tsx
 import type { Metadata } from "next"
 import "./globals.css"
-import { AuthProvider }  from "@/src/features/auth/hooks/useAuth"
-import LayoutClient      from "@/src/components/layout/LayoutClient"
+import { AuthProvider }  from "@/features/auth/hooks/useAuth"
+import LayoutClient from "@/widgets/layout/LayoutClient"
 
 export const metadata: Metadata = {
   title: "GotikHub",

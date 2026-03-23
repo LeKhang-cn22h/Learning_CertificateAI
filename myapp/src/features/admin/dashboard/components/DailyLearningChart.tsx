@@ -1,9 +1,10 @@
     "use client"
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, Cell,
+  Tooltip, ResponsiveContainer,
+  Cell,
 } from "recharts"
-import type { DailyLearningPoint } from "@/src/features/admin/dashboard/types"
+import type { DailyLearningPoint } from "@/features/admin/dashboard/types"
 
 export default function DailyLearningChart({ data }: { data: DailyLearningPoint[] }) {
   const max = Math.max(...data.map(d => d.sessions))
@@ -37,7 +38,10 @@ export default function DailyLearningChart({ data }: { data: DailyLearningPoint[
             }}
             cursor={{ fill: "#f9fafb" }}
           />
-          <Bar dataKey="sessions" radius={[6, 6, 0, 0]}>
+          <Bar dataKey="sessions" radius={[6, 6, 0, 0]}
+          fill="#bfdbfe"
+          isAnimationActive={false}
+          >
             {data.map((entry, i) => (
               <Cell
                 key={i}

@@ -1,5 +1,5 @@
-import TopicShowcasePage from "@/src/features/topics/components/TopicShowcasePage";
-import { aiTechData } from "@/src/features/topics/data/aiTechData";
+import TopicShowcasePage from "@/features/topics/components/TopicShowcasePage";
+import { aiTechData } from "@/features/topics/data/aiTechData";
 
 export const metadata = {
   title: "AI & Technology | GotikHub",

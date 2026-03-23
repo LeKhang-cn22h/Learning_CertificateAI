@@ -1,11 +1,11 @@
 // src/features/certifications/components/CertificationsPage.tsx
 "use client"
 import { useState, useMemo }       from "react"
-import { useCertifications }       from "@/src/features/certifications/hooks/useCertifications"
-import CertHero from "@/src/features/certifications/components/CertHero"
-import FeaturedPartners from "@/src/features/certifications/components/FeaturedPartners"
-import ProviderFilter from "@/src/features/certifications/components/ProviderFilter"
-import CertCard from "@/src/features/certifications/components/CertCard"
+import { useCertifications }       from "@/features/certifications/hooks/useCertifications"
+import CertHero from "@/features/certifications/components/CertHero"
+import FeaturedPartners from "@/features/certifications/components/FeaturedPartners"
+import ProviderFilter from "@/features/certifications/components/ProviderFilter"
+import CertCard from "@/features/certifications/components/CertCard"
 
 export default function CertificationsPage() {
   const { data, loading, error } = useCertifications()

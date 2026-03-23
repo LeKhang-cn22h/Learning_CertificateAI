@@ -3,7 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer,
 } from "recharts"
-import type { NewUserPoint } from "@/src/features/admin/dashboard/types"
+import type { NewUserPoint } from "@/features/admin/dashboard/types"
 
 export default function NewUsersChart({ data }: { data: NewUserPoint[] }) {
   return (

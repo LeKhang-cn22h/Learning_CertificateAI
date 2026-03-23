@@ -1,5 +1,5 @@
-import { apiClient }        from "@/src/lib/apiClient"
-import type { DashboardData } from "@/src/features/admin/dashboard/types"
+import type { DashboardData } from "@/features/admin/dashboard/types"
+import { apiClient } from "@/shared/api/apiClient"
 
 export const dashboardService = {
   getDashboard: () =>

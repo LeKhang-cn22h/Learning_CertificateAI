@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useReducer, useState, useCallback } from "react"
-import { adminCourseService }                           from "@/src/features/admin/courses/services/adminCourseService"
-import type { AdminCoursesData }                        from "@/src/features/admin/courses/types"
+import { adminCourseService }                           from "@/features/admin/courses/services/adminCourseService"
+import type { AdminCoursesData }                        from "@/features/admin/courses/types"
+import type { ApiResponse } from "@/shared/api/apiClient"
 
 type State  = { data: AdminCoursesData | null; loading: boolean; error: string | null }
 type Action =
@@ -21,13 +22,13 @@ export function useAdminCourses() {
   const [category,  setCategory] = useState("All")
   const [deleteId,  setDeleteId] = useState<string | null>(null)
 
-  const load = useCallback(() => {
-    dispatch({ type: "LOADING" })
-    adminCourseService.getCourses().then(({ data, error }) => {
-      if (error || !data) dispatch({ type: "ERROR",   error: error ?? "Failed to load" })
-      else                dispatch({ type: "SUCCESS", data })
-    })
-  }, [])
+const load = useCallback(() => {
+  dispatch({ type: "LOADING" })
+  adminCourseService.getCourses().then(({ data, error }: ApiResponse<AdminCoursesData>) => {
+    if (error || !data) dispatch({ type: "ERROR",   error: error ?? "Failed to load" })
+    else                dispatch({ type: "SUCCESS", data })
+  })
+}, [])
 
   useEffect(() => { load() }, [load])
 
@@ -39,7 +40,7 @@ export function useAdminCourses() {
     return matchSearch && matchCategory
   }) ?? []
 
-  const categories = [
+  const categories: string[] = [
     "All",
     ...Array.from(new Set(state.data?.courses.map(c => c.category) ?? [])),
   ]

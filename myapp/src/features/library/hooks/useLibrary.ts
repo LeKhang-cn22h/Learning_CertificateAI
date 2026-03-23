@@ -1,7 +1,7 @@
 ﻿'use client'
 import { useEffect, useState }  from 'react'
-import { libraryService }       from '@/src/services/libraryService'
-import type { LibraryData }     from '@/src/features/library/types'
+import type { LibraryData }     from '@/features/library/types'
+import { libraryService } from '../services/libraryService'
 
 export function useLibrary() {
   const [data, setData]       = useState<LibraryData | null>(null)

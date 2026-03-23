@@ -1,10 +1,10 @@
 // app/admin/courses/new/page.tsx
 "use client"
 import { useRouter }              from "next/navigation"
-import RequireRole                from "@/src/features/auth/components/RequireRole"
-import AdminFormWrapper           from "@/src/features/admin/shared/components/AdminFormWrapper"
-import CourseForm                 from "@/src/features/admin/courses/components/CourseForm"
-import { useAdminCourseForm }     from "@/src/features/admin/courses/hooks/useAdminCourseForm"
+import RequireRole                from "@/features/auth/components/RequireRole"
+import AdminFormWrapper           from "@/features/admin/shared/components/AdminFormWrapper"
+import CourseForm                 from "@/features/admin/courses/components/CourseForm"
+import { useAdminCourseForm }     from "@/features/admin/courses/hooks/useAdminCourseForm"
 
 export default function NewCoursePage() {
   const router = useRouter()

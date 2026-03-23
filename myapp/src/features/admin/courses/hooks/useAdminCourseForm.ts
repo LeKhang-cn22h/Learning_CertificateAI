@@ -1,10 +1,10 @@
-// src/features/admin/courses/hooks/useAdminCourseForm.ts
+// features/admin/courses/hooks/useAdminCourseForm.ts
 "use client"
 import { useEffect, useReducer, useState } from "react"
 import { useRouter }                       from "next/navigation"
-import { adminCourseService }              from "@/src/features/admin/courses/services/adminCourseService"
-import type { CourseFormData }             from "@/src/features/admin/courses/types"
-import { EMPTY_COURSE_FORM }               from "@/src/features/admin/courses/types"
+import { adminCourseService }              from "@/features/admin/courses/services/adminCourseService"
+import type { CourseFormData }             from "@/features/admin/courses/types"
+import { EMPTY_COURSE_FORM }               from "@/features/admin/courses/types"
 
 type FetchState = {
   fetching: boolean

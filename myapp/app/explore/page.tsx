@@ -1,10 +1,10 @@
 "use client"
 
-import ExploreGrid from "@/src/features/courses/components/ExploreGrid"
-import ExploreHeader from "@/src/features/courses/components/ExploreHeader"
-import ExploreSearch from "@/src/features/courses/components/ExploreSearch"
-import ExploreSidebar from "@/src/features/courses/components/ExploreSidebar"
-import { useExplore } from "@/src/features/courses/hook/useExplore"
+import ExploreGrid from "@/features/courses/components/ExploreGrid"
+import ExploreHeader from "@/features/courses/components/ExploreHeader"
+import ExploreSearch from "@/features/courses/components/ExploreSearch"
+import ExploreSidebar from "@/features/courses/components/ExploreSidebar"
+import { useExplore } from "@/features/courses/hooks/useExplore"
 
 export default function ExplorePage() {
   const {
